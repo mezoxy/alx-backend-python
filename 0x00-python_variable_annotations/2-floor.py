@@ -2,9 +2,6 @@
 ''' 2-floor.py '''
 
 
-import math
-
-
 def floor(n: float) -> int:
     '''
         floor: Takes a float n as arg and returns the floor of the float.
@@ -12,4 +9,4 @@ def floor(n: float) -> int:
             n: A number type float
         Return: An onteger number
     '''
-    return math.floor(n)
+    return int(n)
