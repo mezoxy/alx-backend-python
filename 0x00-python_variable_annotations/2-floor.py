@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-''' 2-floor.py'''
+''' 2-floor.py '''
 
+
+import math
 
 def floor(n: float) -> int:
     '''
@@ -9,4 +11,4 @@ def floor(n: float) -> int:
             n: A number type float
         Return: An onteger number
     '''
-    return int(n)
+    return math.floor(n)
