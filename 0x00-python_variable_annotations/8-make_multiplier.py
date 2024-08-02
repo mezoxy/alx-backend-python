@@ -3,11 +3,10 @@
 
 
 from typing import Callable
-import random
 
 
 def fun(n: float) -> float:
-    return n * random.random()
+    return n * 1.1
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
