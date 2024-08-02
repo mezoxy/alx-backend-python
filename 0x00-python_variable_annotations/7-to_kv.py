@@ -5,12 +5,12 @@
 from typing import Tuple, Union
 
 
-def to_vk(k: str, v: Union(int, float)) -> Tuple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     '''
-        to_vk: Takes a str k and an int OR float v as args and returns a tuple
+        to_kv: Takes a str k and an int OR float v as args and returns a tuple
         Args:
             k: A string
             v: An integer or a float
             Return: A tuple (str, float)
     '''
-    return (k, float(v))
+    return (k, v ** 2)
