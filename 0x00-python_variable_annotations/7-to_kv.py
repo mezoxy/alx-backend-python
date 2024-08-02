@@ -2,10 +2,10 @@
 ''' 7-to_vk.py'''
 
 
-from typing import Tuple
+from typing import Tuple, Union
 
 
-def to_vk(k: str, v: int | float) -> Tuple[str, float]:
+def to_vk(k: str, v: Union(int, float)) -> Tuple[str, float]:
     '''
         to_vk: Takes a str k and an int OR float v as args and returns a tuple
         Args:
