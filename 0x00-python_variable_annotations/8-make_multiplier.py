@@ -7,10 +7,9 @@ from typing import Callable
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
     '''
-        to_kv: Takes a str k and an int OR float v as args and returns a tuple
+        make_multiplier: that takes a float multiplier as argument
         Args:
-            k: A string
-            v: An integer or a float
-            Return: A tuple (str, float)
+            multiplier: A float
+        Return: A function that multiplies a float by multiplier
     '''
-    return lambda x: 1.1 * multiplier
+    return lambda x: x * multiplier
