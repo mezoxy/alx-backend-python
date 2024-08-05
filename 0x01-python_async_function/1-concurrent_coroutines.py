@@ -21,6 +21,6 @@ async def wait_n(n, max_delay):
 
     lis1 = []
     for i in range(n):
-        lis1.push(min(lis))
+        lis1.append(min(lis))
         lis.remove(min(lis))
     return lis1
