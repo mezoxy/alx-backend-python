@@ -17,6 +17,6 @@ def task_wait_random(max_delay: int) -> Awaitable:
 
         Return: A list of delays
     '''
-    obj = asyncio.Task(wait_random(max_delay))
+    obj = asyncio.create_task(wait_random(max_delay))
 
     return obj
