@@ -7,7 +7,7 @@ import random
 from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator[float]:
+async def async_generator() -> AsyncGenerator[float, None]:
     '''
         async_generator: An async generator that yields random float values.
     '''
