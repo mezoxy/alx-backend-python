@@ -7,10 +7,10 @@ import random
 from typing import AsyncGenerator
 
 
-async def async_generator() -> Generator[float, None, None]:
+async def async_generator() -> AsyncGenerator[float, int]:
     '''
         async_generator: An async generator that yields random float values.
     '''
-    for i in range(10):
+    for _ in range(10):
         await asyncio.sleep(1)
-        yield random.random() * 10
+        yield random.uniform(0, 10)
